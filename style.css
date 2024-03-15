@@ -1,0 +1,68 @@
+#canvas
+{
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+body, html
+{
+    height: 100%;
+    margin: 0;
+}
+
+
+#bg
+{
+    background-image: url("background.png");
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 950px;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+#title-image
+{
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+    width: 200px;
+}
+
+.space
+{
+    height: 20px;
+}
+
+
+
+@media screen and (min-height: 750px)
+{
+    .space-ifbig
+    {
+        height: 20px;
+    }
+}
+
+@media screen and (min-height: 900px)
+{
+    #bg
+    {
+        height: 105%;
+    }
+}
